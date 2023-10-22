@@ -20,14 +20,32 @@
 
 # print( 'langues is {detect}')
 
+from rake_nltk import Rake
 from langdetect import detect
 
-# Open and read the content of the file
-file_path = 'src/textexample.txt'
-with open(file_path, 'r') as file:
-    file_content = file.read()
+def extract_keywords(text):
+    detected_language = detect(text)
+    
+    # Map detected language to Rake language code (if needed)
+    language_mapping = {
+        'en': 'english',  # English
+        'es': 'spanish'   # Spanish
+        # Add more language codes and corresponding Rake language codes as needed
+    }
+    
+    # Set Rake language based on detected language (default to English if not detected)
+    rake_language = language_mapping.get(detected_language, 'english')
+    
+    rake_nltk_var = Rake(language=rake_language)
+    rake_nltk_var.extract_keywords_from_text(text)
+    keywords_extracted = rake_nltk_var.get_ranked_phrases()
+    return keywords_extracted
 
-# Detect the language
-detected_language = (detect(file_content)).upper()
+# Example usage
+input_text = 'En muchas ocasiones el campo de actuación del aprendizaje automático se solapa con el de la estadística inferencial'
+keywords = extract_keywords(input_text)
 
-print(f'Detected language: {detected_language}')
+print("Extracted Keywords:")
+print(keywords)
+
+

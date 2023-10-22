@@ -1,6 +1,10 @@
 import re
 from langdetect import detect
 from collections import Counter
+from rake_nltk import Rake
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 
 # feature #1 for Basic Text Analysis
 class Analisis_text():
@@ -36,3 +40,20 @@ class Word_Frequency():
     def  word_frequency(self): #will return top 5 most common words
         frequency= Counter(self.text.split()).most_common(5) 
         return frequency
+    
+# feature #3 keyword extraction
+
+class Keyword():
+    def __init__(self,text):
+        self.text = text
+
+    def keyword_extraction(self):
+        language = (detect(self.text))
+        language_list = {'en': 'english', 'es': 'spanish', 'fr': 'french', 'it': 'italian'}
+        rake_language = language_list.get(language,'english') # 'Get' used to extract from dictionaries
+        rake_nltk_var = Rake(language=rake_language)
+        rake_nltk_var.extract_keywords_from_text(self.text)
+        keyword_extracted = rake_nltk_var.get_ranked_phrases()[:10]
+        return keyword_extracted
+
+    
