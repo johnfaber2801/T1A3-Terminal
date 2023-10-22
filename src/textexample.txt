@@ -1,4 +1,3 @@
-
 Why Python?
 
 Python is just one programming language of many. Just like human languages, there are many different

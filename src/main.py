@@ -10,6 +10,14 @@ with open(file_path) as file:
 #instance of Analisis_text class
 analizer = Analisis_text(text)
 
-# Call word_count method and print the result
+# Calling methods in Analisis text for feature #1
 word_count = analizer.word_count()
-print(f'Number of words in the text: {word_count}')
+character_count = analizer.character_count()
+lines_count = analizer.lines_count()
+paragraph_count = analizer.paragraph_count()
+
+
+print(f'Number of words are: {word_count}')
+print(f'Number of characters are: {character_count} ')
+print(f'Number of lines are: {lines_count}')
+print(f'Number of paragraphs are: {paragraph_count}')
