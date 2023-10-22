@@ -1,5 +1,5 @@
 import re
-from textblob import TextBlob
+from langdetect import detect
 
 # feature #1 for Basic Text Analysis
 class Analisis_text():
@@ -22,4 +22,6 @@ class Analisis_text():
         paragraphs_count = len([paragraph for paragraph in self.text.split('\n\n') if paragraph.strip()])#list comphrension
         return paragraphs_count
     
-   
+    def language_text(self): # returns the language text
+        language = (detect(self.text)).upper()
+        return language
