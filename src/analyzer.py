@@ -1,5 +1,6 @@
 import re
 from langdetect import detect
+from collections import Counter
 
 # feature #1 for Basic Text Analysis
 class Analisis_text():
@@ -25,3 +26,13 @@ class Analisis_text():
     def language_text(self): # returns the language text
         language = (detect(self.text)).upper()
         return language
+
+# feature #2 Word frequency analysis
+
+class Word_Frequency():
+    def __init__(self,text):
+        self.text = text
+
+    def  word_frequency(self): #will return top 5 most common words
+        frequency= Counter(self.text.split()).most_common(5) 
+        return frequency
