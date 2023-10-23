@@ -13,23 +13,23 @@ class Analisis_text():
        
     def word_count(self): # returns the number of words
         words = (len(re.findall(r'\w+', self.text)))
-        return words
-    
+        print(f'Number of words are: {words}')
+           
     def character_count(self): # returns the number of characters
         characters = (len(self.text))
-        return characters
-    
+        print(f'Number of characters are: {characters} ')
+       
     def lines_count(self): # returns the number of lines excluding empty lines
         line_count =len([line for line in self.text.splitlines() if line.strip()])#list comphrension
-        return line_count
-    
+        print(f'Number of lines are: {line_count}')
+          
     def paragraph_count(self): # returns the number of paragraphs
         paragraphs_count = len([paragraph for paragraph in self.text.split('\n\n') if paragraph.strip()])#list comphrension
-        return paragraphs_count
+        print(f'Number of paragraphs are: {paragraphs_count}')
     
     def language_text(self): # returns the language text
         language = (detect(self.text)).upper()
-        return language
+        print(f'language text: {language}')
 
 # feature #2 Word frequency analysis
 
@@ -39,7 +39,7 @@ class Word_Frequency():
 
     def  word_frequency(self): #will return top 5 most common words
         frequency= Counter(self.text.split()).most_common(5) 
-        return frequency
+        print(f' your top 5  most common words are: \n {frequency}')
     
 # feature #3 keyword extraction
 
@@ -53,7 +53,9 @@ class Keyword():
         rake_language = language_list.get(language,'english') # 'Get' used to extract from dictionaries
         rake_nltk_var = Rake(language=rake_language)
         rake_nltk_var.extract_keywords_from_text(self.text)
-        keyword_extracted = rake_nltk_var.get_ranked_phrases()[:10]
-        return keyword_extracted
+        keyword_extracted = rake_nltk_var.get_ranked_phrases()[:5]
+        print (f' The Top 5 keywords of your text are: \n {keyword_extracted}')
+       
+      
 
     

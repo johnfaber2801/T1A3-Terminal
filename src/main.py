@@ -3,9 +3,9 @@ from analyzer import Word_Frequency
 from analyzer import Keyword
 
 
-# file_path= 'src/Englishtext.txt'
+file_path= 'src/Englishtext.txt'
 # file_path= 'src/spanishtext.txt'
-file_path= 'src/frenchtext.txt'
+# file_path= 'src/frenchtext.txt'
 with open(file_path) as file:
     text = file.read()
 
@@ -13,9 +13,16 @@ with open(file_path) as file:
 # text_example = text
 
 #instance of Analisis_text class
-analizer = Analisis_text(text)
-frequency = Word_Frequency(text)
-keywords = Keyword(text)
+analyzer = Analisis_text(text)
+
+# analyzer.word_count()
+# analyzer.character_count()
+# analyzer.lines_count()
+# analyzer.paragraph_count()
+# analyzer.language_text()
+
+# frequency = Word_Frequency(text)
+# keywords = Keyword(text)
 
                 #FEATURE #1
 
@@ -26,7 +33,7 @@ keywords = Keyword(text)
 # paragraph_count = analizer.paragraph_count()
 # language = analizer.language_text()
 
-
+# print(f'Number of words are: {words}')
 # print(f'Number of words are: {word_count}')
 # print(f'Number of characters are: {character_count} ')
 # print(f'Number of lines are: {lines_count}')
@@ -39,5 +46,5 @@ keywords = Keyword(text)
 # print(f' your top 5  most common words are: \n {word_frequency}')
 
                 #FEATURE #3
-keywords_extracted = keywords.keyword_extraction()
-print(f' The keywords of your text are: \n {keywords_extracted}')
+# keywords_extracted = keywords.keyword_extraction()
+# print(f' The keywords of your text are: \n {keywords_extracted}')
