@@ -2,49 +2,63 @@ from analyzer import Analisis_text
 from analyzer import Word_Frequency
 from analyzer import Keyword
 
-
-file_path= 'src/Englishtext.txt'
-# file_path= 'src/spanishtext.txt'
-# file_path= 'src/frenchtext.txt'
+file_path= 'src/enter_your_text_here.txt'
 with open(file_path) as file:
-    text = file.read()
+    file_text = file.read()
 
-#get input text for user
-# text_example = text
+analyzer = Analisis_text(file_text)
+frequency = Word_Frequency(file_text)
+keywords = Keyword(file_text)
 
-#instance of Analisis_text class
-analyzer = Analisis_text(text)
+        # Choice #1
+def analyze_text(analyzer):
+    analyzer.word_count()
+    analyzer.character_count()
+    analyzer.lines_count()
+    analyzer.paragraph_count()
+    analyzer.language_text()
 
-# analyzer.word_count()
-# analyzer.character_count()
-# analyzer.lines_count()
-# analyzer.paragraph_count()
-# analyzer.language_text()
+print('--------------------------------')
+print('Welcome to Text File Analyzer')
+print('--------------------------------')
 
-# frequency = Word_Frequency(text)
-# keywords = Keyword(text)
+while True:    
+    
+        print('Choose an option')
+        print('1. Text Analysis')
+        print('2. Word Frequency Analysis')
+        print('3. Keywords extraction')
+        print('4. Exit')
 
-                #FEATURE #1
+        choice = input('Enter choice:  ')
 
-# Calling methods in Analisis text for feature #1
-# word_count = analizer.word_count()
-# character_count = analizer.character_count()
-# lines_count = analizer.lines_count()
-# paragraph_count = analizer.paragraph_count()
-# language = analizer.language_text()
+        if choice == '1': 
+            analyze_text(analyzer)
 
-# print(f'Number of words are: {words}')
-# print(f'Number of words are: {word_count}')
-# print(f'Number of characters are: {character_count} ')
-# print(f'Number of lines are: {lines_count}')
-# print(f'Number of paragraphs are: {paragraph_count}')
-# print(f'language text: {language}')
+        elif choice == '2':
+            word_frequency = frequency.word_frequency()
 
-                #FEATURE #2
+        elif choice == '3':
+            keywords_extracted = keywords.keyword_extraction()
+        
+        elif choice == '4':
+            print('Thanks for using Text File Analizer! ')
+            break
 
-# word_frequency = frequency.word_frequency()
-# print(f' your top 5  most common words are: \n {word_frequency}')
+        else: 
+            print('--------------------------------')
+            print('Invalid choice, Please try again')
+            print('--------------------------------')
 
-                #FEATURE #3
-# keywords_extracted = keywords.keyword_extraction()
-# print(f' The keywords of your text are: \n {keywords_extracted}')
+        while True:
+            continue_option = input('Would you like to continue? (yes/no): ').lower()
+            if continue_option in ['yes', 'no']:
+                break
+            else:
+                print('Invalid input. Please enter "yes" or "no".')
+
+        if continue_option != 'yes':
+            print('--------------------------------')
+            print('Thanks for using Text File Analizer! ')
+            print('--------------------------------')
+            break
