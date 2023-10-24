@@ -1,4 +1,4 @@
-from analyzer import Analisis_text
+from analyzer import Analysis_text
 from analyzer import Word_Frequency
 from analyzer import Keyword
 
@@ -26,7 +26,7 @@ def main():
 
     if file_text:
 
-        analyzer = Analisis_text(file_text)
+        analyzer = Analysis_text(file_text)
         frequency = Word_Frequency(file_text)
         keywords = Keyword(file_text)
                 
@@ -59,11 +59,9 @@ def main():
                     print('Thanks for using Text File Analizer! ')
                     print('--------------------------------')
                     break
-                else: 
-                    print('--------------------------------')
-                    print('Invalid choice, Input must be number 1, 2, 3 or 4.\nPlease try again!')
-                    print('--------------------------------')
-               
+                else:
+                    raise ValueError('Invalid choice, Input must be number 1, 2, 3 or 4.\nPlease try again!')
+                              
                 while True:
                      continue_option = input('Would you like to continue? (yes/no): ').lower()
                      if continue_option in ['yes', 'no']:

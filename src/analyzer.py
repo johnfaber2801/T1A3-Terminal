@@ -7,7 +7,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 # feature #1 for Basic Text Analysis
-class Analisis_text():
+class Analysis_text():
     def __init__(self,text):
         self.text = text
        
@@ -38,8 +38,10 @@ class Word_Frequency():
         self.text = text
 
     def  word_frequency(self): #will return top 5 most common words
-        frequency= Counter(self.text.split()).most_common(5) 
+        frequency= dict(Counter(self.text.split()).most_common(5))
         print(f' your top 5  most common words are: \n {frequency}')
+
+        return frequency
     
 # feature #3 keyword extraction
 
