@@ -14,6 +14,7 @@ class Analysis_text():
     def word_count(self): # returns the number of words
         words = (len(re.findall(r'\w+', self.text)))
         print(f'Number of words are: {words}')
+        return words
            
     def character_count(self): # returns the number of characters
         characters = (len(self.text))
