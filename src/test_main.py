@@ -48,11 +48,23 @@ def test_lines_count():
      expected_count = 2
      assert lines_count == expected_count
 
+     text10 = 'hi hi\n hi hi hi\n python python\n python python'
+     count = Analysis_text(text10)
+     lines_count = count.lines_count()
+     expected_count = 4
+     assert lines_count == expected_count
+
 def test_paragraph_count():
      text6 = 'hi hi hi hi hi hi\n\n python python python python'
      count = Analysis_text(text6)
      paragraph_count = count.paragraph_count()
      expected_count = 2
+     assert paragraph_count == expected_count
+
+     text11 = 'hi hi hi\n\n hi hi hi\n\n python python \n\npython python'
+     count = Analysis_text(text11)
+     paragraph_count = count.paragraph_count()
+     expected_count = 4
      assert paragraph_count == expected_count
 
 def test_language_text():
