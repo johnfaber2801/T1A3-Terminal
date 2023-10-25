@@ -34,6 +34,48 @@ def test_word_count():
     expected_count = 11
     assert word_count == expected_count
 
+def test_character_count():
+    text4 = 'hi hi hi hi hi python python python python python python...'
+    count = Analysis_text(text4)
+    character_count = count.character_count()
+    expected_count = 59
+    assert character_count == expected_count
+
+def test_lines_count():
+     text5 = 'hi hi hi hi hi\n python python python python'
+     count = Analysis_text(text5)
+     lines_count = count.lines_count()
+     expected_count = 2
+     assert lines_count == expected_count
+
+def test_paragraph_count():
+     text6 = 'hi hi hi hi hi hi\n\n python python python python'
+     count = Analysis_text(text6)
+     paragraph_count = count.paragraph_count()
+     expected_count = 2
+     assert paragraph_count == expected_count
+
+def test_language_text():
+     text7 = ' good morning sydney, how is things going? i hope all is good'
+     language = Analysis_text(text7)
+     language_result = language.language_text()
+     expected_language = 'EN'
+     assert language_result == expected_language
+
+     text8 = ' buenos dias sydney como estan? espero todo este muy bien'
+     language = Analysis_text(text8)
+     language_result = language.language_text()
+     expected_language = 'ES'
+     assert language_result == expected_language
+
+     text9 = "Guten Morgen Sydney, wie geht's? Ich hoffe, alles ist gut"
+     language = Analysis_text(text9)
+     language_result = language.language_text()
+     expected_language = 'DE'
+     assert language_result == expected_language
+
+
+
     
    
 
