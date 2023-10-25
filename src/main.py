@@ -2,15 +2,6 @@ from analyzer import Analysis_text
 from analyzer import Word_Frequency
 from analyzer import Keyword
 
-
-def read_file(file_path):
-     try:        
-        with open(file_path) as file:
-         return file.read()
-    
-     except Exception as e:
-        print(f"Error: {e}")
-
         # Feature #1
 def analyze_text(analyzer):
     analyzer.word_count()
@@ -20,29 +11,25 @@ def analyze_text(analyzer):
     analyzer.language_text()
 
 def main():
-                #file path must be specified here
-    file_path = 'src/enter_your_text_here.txt'
-    file_text = read_file(file_path)
-
-    if file_text:
-
-        analyzer = Analysis_text(file_text)
-        frequency = Word_Frequency(file_text)
-        keywords = Keyword(file_text)
-                
-        print('--------------------------------')
-        print('Welcome to Text File Analyzer')
-        print('--------------------------------')
+    print('--------------------------------')
+    print('Welcome to Text File Analyzer')
+    print('--------------------------------')
+   
+    user_text = input('Enter the text you want to analyze:\n\n ')         
 
     while True:    
-        
-            print('Choose an option')
+            
+            analyzer = Analysis_text(user_text)
+            frequency = Word_Frequency(user_text)
+            keywords = Keyword(user_text)
+
+            print('\nChoose an option for you text\n')
             print('1. Text Analysis')
             print('2. Word Frequency Analysis')
             print('3. Keywords extraction')
             print('4. Exit')
 
-            choice = input('Enter choice:  ')
+            choice = input('\nEnter choice:  ')
 
             try:
                 if choice == '1': 
