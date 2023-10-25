@@ -10,12 +10,24 @@ def analyze_text(analyzer):
     analyzer.paragraph_count()
     analyzer.language_text()
 
+    # input text from user
+def get_user_input():
+    while True:
+        try:
+            user_text = input('Enter the text you want to analyze:\n\n ')
+            if len(user_text.strip()) == 0:
+                raise ValueError('Input cannot be empty. Please enter some text.')
+            return user_text
+        except Exception as e:
+            print(f"Error: {e}")
+
+
 def main():
     print('--------------------------------')
     print('Welcome to Text File Analyzer')
     print('--------------------------------')
-   
-    user_text = input('Enter the text you want to analyze:\n\n ')         
+    
+    user_text = get_user_input()         
 
     while True:    
             
