@@ -1,8 +1,6 @@
 import pytest
 from analyzer import Analysis_text
 from analyzer import Word_Frequency
-from analyzer import Keyword
-from collections import Counter
 
                         # Feature #2
 
@@ -27,6 +25,7 @@ def test_word_frequency_empty_text():
 
                             # Feature #1
 
+# test for word count feature
 def test_word_count():
     text3 = 'hi hi hi hi hi python python python python python python...'
     count = Analysis_text(text3)
@@ -34,6 +33,7 @@ def test_word_count():
     expected_count = 11
     assert word_count == expected_count
 
+# test for character count
 def test_character_count():
     text4 = 'hi hi hi hi hi python python python python python python...'
     count = Analysis_text(text4)
@@ -41,6 +41,7 @@ def test_character_count():
     expected_count = 59
     assert character_count == expected_count
 
+# 2 tests for lines count
 def test_lines_count():
      text5 = 'hi hi hi hi hi\n python python python python'
      count = Analysis_text(text5)
@@ -54,6 +55,7 @@ def test_lines_count():
      expected_count = 4
      assert lines_count == expected_count
 
+# 2 tests for paragraphs count
 def test_paragraph_count():
      text6 = 'hi hi hi hi hi hi\n\n python python python python'
      count = Analysis_text(text6)
@@ -67,6 +69,7 @@ def test_paragraph_count():
      expected_count = 4
      assert paragraph_count == expected_count
 
+# 3 tests in spanish, english and german for language detection feature
 def test_language_text():
      text7 = ' good morning sydney, how is things going? i hope all is good'
      language = Analysis_text(text7)

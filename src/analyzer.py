@@ -56,7 +56,7 @@ class Keyword():
 
     def keyword_extraction(self):
         language = (detect(self.text))
-        language_list = {'en': 'english', 'es': 'spanish', 'fr': 'french', 'it': 'italian'}
+        language_list = {'en': 'english', 'es': 'spanish', 'fr': 'french', 'it': 'italian','de': 'german'}
         rake_language = language_list.get(language,'english') # 'Get' used to extract from dictionaries
         rake_nltk_var = Rake(language=rake_language)
         rake_nltk_var.extract_keywords_from_text(self.text)
