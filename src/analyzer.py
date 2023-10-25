@@ -13,7 +13,7 @@ class Analysis_text():
        
     def word_count(self): # returns the number of words
         words = (len(re.findall(r'\w+', self.text)))
-        print(f'Number of words are: {words}')
+        print(f'\nNumber of words are: {words}')
         return words
            
     def character_count(self): # returns the number of characters
@@ -44,7 +44,7 @@ class Word_Frequency():
 
     def  word_frequency(self): #will return top 5 most common words
         frequency= dict(Counter(self.text.split()).most_common(5))
-        print(f' your top 5  most common words are: \n {frequency}')
+        print(f'\nyour top 5  most common words are: \n\n {frequency}')
 
         return frequency
     
@@ -61,7 +61,7 @@ class Keyword():
         rake_nltk_var = Rake(language=rake_language)
         rake_nltk_var.extract_keywords_from_text(self.text)
         keyword_extracted = rake_nltk_var.get_ranked_phrases()[:5]
-        print (f' The Top 5 keywords of your text are: \n {keyword_extracted}')
+        print (f'\nThe Top 5 keywords of your text are:\n\n {keyword_extracted}')
         return keyword_extracted
        
       

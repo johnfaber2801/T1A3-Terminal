@@ -50,11 +50,11 @@ def main():
                     raise ValueError('Invalid choice, Input must be number 1, 2, 3 or 4.\nPlease try again!')
                               
                 while True:
-                     continue_option = input('Would you like to continue? (yes/no): ').lower()
+                     continue_option = input('\nWould you like to continue? (yes/no): ').lower()
                      if continue_option in ['yes', 'no']:
                         break                       
                      else:
-                        print("Invalid choice, Input must be 'yes' or 'no'")    
+                        print("\nInvalid choice, Input must be 'yes' or 'no'")    
 
                 if continue_option != 'yes':
                     print('--------------------------------')
