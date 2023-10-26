@@ -1,4 +1,4 @@
-# Text Analyzer**
+# Text Analyzer
 
 ## important links
 
@@ -92,16 +92,16 @@ tqdm==4.66.1
 
 ### Installation
 
-1. Check for Python if it is installed.
+1. Check in your terminal for Python if it is installed.
 
 ```py
  python --version
 ```
-It should return the python version example below
+It should return the python version, example below
 ```
 Python 3.10.12
 ```
-if python it is not installed go back to how to install it [here](https://wiki.python.org/moin/BeginnersGuide/Download)
+if python it is not installed, go back to how to install it [here](https://wiki.python.org/moin/BeginnersGuide/Download)
 
 2. Download text analyzer
 
@@ -109,7 +109,7 @@ Download the text analyzer file by navigating to the [Github repository](https:/
 
 ![zip](Files/Download%20ZIP.png)
 
-3. Navigate to the directory 'T1A3-Terminal'
+3. In your terminal, navigate to the directory 'T1A3-Terminal'
 
  ```bash
  cd T1A3-Terminal
@@ -122,7 +122,7 @@ Download the text analyzer file by navigating to the [Github repository](https:/
  ```bash
  bash script.sh
  ```
- the app should open after installing. if the app does not start run
+ the app should open after installing. if the app does not run
  ```bash
  python3 src/main.py
  ```
