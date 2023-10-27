@@ -80,11 +80,11 @@ tqdm==4.66.1
 
 1. Check in your terminal for Python if it is installed.
 
-```py
+```bash
  python --version
 ```
 
-It should return the python version, example below
+It should return the python version, example below. Anything above 3 is good.
 
 ```bash
 Python 3.10.12
@@ -104,7 +104,13 @@ Download the text analyzer file by navigating to the [Github repository](https:/
  cd T1A3-Terminal
  ```
 
- then run  'script.sh' to install dependencies, activate a virtual environment, and run Python within T1A3-Terminal directory
+4.From inside the 'T1A3-Terminal' directory, navigate the source folder.
+
+```bash
+cd src
+```
+
+5.Run 'script.sh' to install dependencies.
 
  ```bash
  ./script.sh
@@ -116,7 +122,7 @@ Download the text analyzer file by navigating to the [Github repository](https:/
  bash script.sh
  ```
 
- the app should open after installing. if the app does not run
+ the app should open after installing. if the app does not run, run the code below inside the 'T1A3-Terminal' directory.
 
  ```bash
  python3 src/main.py
@@ -197,11 +203,11 @@ The first screenshot below shows the timeline of the duration of the project wit
 
 ### Dependencies
 
-[dependencies](docs/dependencies.png)
+![dependencies](docs/dependencies.png)
 
 ### Script
 
-[script](docs/script.png)
+![script](docs/script.png)
 
 ## Sources
 
@@ -216,4 +222,3 @@ The first screenshot below shows the timeline of the duration of the project wit
 - [pytest](https://docs.pytest.org/en/7.4.x/)
 - [exceptions](https://docs.python.org/3/tutorial/errors.html)
 - [pycodestyle](https://docs.python.org/3/tutorial/errors.html)
-
