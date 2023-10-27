@@ -129,7 +129,8 @@ Download the text analyzer file by navigating to the [Github repository](https:/
 1. you are going to be welcome by the app then ask you to enter your text to be analyzed.
 ( simply copy and paste your text or write yours) then press 'enter'.
 
-![inpuu](docs/welcome)
+![input](docs/welcome.png)
+
 ![text](docs/input%20text.png)
 
 2.Foour options will pop,  please type 1, 2, 3 or 4 then 'enter' , the analisis will be shown after.
@@ -150,4 +151,69 @@ The Text Analyzer project utilized the GitHub projects tool in order to execute 
 
 The implementation plan was reviewed and updated every day as well after tasks completed successfully, tasks completed at the end of the day were moved to the 'DONE' column list, while tasks not started yet were in 'TODO' column list, and the tasks being performed were in 'PROGRESS' column list. I created a new column named 'ISSUES' for tasks that presented difficulty issues.
 
-The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed.
+The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed. 
+
+![](https://
+
+### Feature #1
+
+![setup](docs/Project%20setup.png)
+![3](docs/all%20tasks%20tested%20with%203%20different%20languages..png)
+![characters](docs/characters%20count%20task%20completed.png)
+![detections](docs/Language%20detection%20%20task%20completed.png)
+![paragraph](docs/paragraph%20count%20%20task%20completed.png)
+
+### Feature #2
+
+![2.1](docs/2.1%20library%20research.png)
+![2.2](docs/2.2%20build%20word%20frequency%20analysis%20CLASS.png)
+![2.3](docs/2.3%20build%20Word%20frequency%20METHOD.png)
+![2.4](docs/2.4%20commit%20changes.png)
+![2.5](docs/2.5%20Test%20the%20function%20using%20text%20files%20in%20all%20three%20languages.png)
+
+### Feature #3
+
+![3.2](docs/3.2%20build%20keyword%20extraction%20Class.png)
+![3.3](docs/3.3%20build%20keyword%20extraction%20method.png)
+![3.4](docs/3.4%20commit%20changes.png)
+![3.5](docs/3.5%20Test%20the%20function%20using%20text%20files%20in%20all%20three%20languages..png)
+
+### Main
+
+![main](docs/adding%20main%20and%20read_file%20as%20functions%20in%20main.py.png)
+![funtions](docs/function%20for%20input%20text%20with%20error%20handlers.png)
+![menu](docs/Menu%20options%20for%20User.png)
+![move](docs/move%20outputs%20from%20main.py%20to%20analzer.py.png)
+
+### Error handling
+
+![error](docs/Errors%20Handlers.png)
+
+### Tests
+
+![frequency](docs/first%20test%20word%20frequency.png)
+![frequency2](docs/second%20test%20word%20frequency.png)
+![feature1test](docs/testfeature1.png)
+
+### Dependencies
+
+[dependencies](docs/dependencies.png)
+
+### Script
+
+[script](docs/script.png)
+
+## Sources
+
+- [datagy]( https://datagy.io/python-count-words/ )
+- [pynative](https://pynative.com/python-count-number-of-lines-in-file/)
+- [stackoverflow](https://stackoverflow.com/)
+- [towardsdatascience](https://towardsdatascience.com/keyword-extraction-process-in-python-with-natural-language-processing-nlp-d769a9069d5c)
+- [langdetect](https://pypi.org/project/langdetect/)
+- [PEP8](https://peps.python.org/pep-0008/)
+- [w3schools](https://www.w3schools.com/)
+- [NLTK](https://www.nltk.org/)
+- [pytest](https://docs.pytest.org/en/7.4.x/)
+- [exceptions](https://docs.python.org/3/tutorial/errors.html)
+- [pycodestyle](https://docs.python.org/3/tutorial/errors.html)
+
