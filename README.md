@@ -18,10 +18,7 @@
 
 This feature will analyze the text that was input by the user prior the option menu, the analysis will count the number of words, characters, lines and paragraphs of the input text, as well as the lenguage of it. The results will be displayed in a list.
 
-##### Note: 
-
-lenguages will be displayed as 'EN' for english, 'ES' for spanish, 'DE' for German, etc...
-
+Note: lenguages will be displayed as 'EN' for english, 'ES' for spanish, 'DE' for German, etc...
 
 ### Feature 2
 
@@ -35,10 +32,7 @@ Allow users to know the Top 5 most frequent words, the program will count and di
 
 Allow users to extract the most frequent non-stop words from the text. Additionally, provide contextual analysis by displaying the sentences where each keyword appears.
 
-##### Note:
-
-This process is set up to run the natural language process over texts written in English, Spanish, Italian, German, and French.
-
+Note: This process is set up to run the natural language process over texts written in English, Spanish, Italian, German, and French.
 
 ## Implementation Plan
 
@@ -46,7 +40,7 @@ The Text Analyzer project utilized the GitHub projects tool in order to execute 
 
 The implementation plan was reviewed and updated every day as well after tasks completed successfully, tasks completed at the end of the day were moved to the 'DONE' column list, while tasks not started yet were in 'TODO' column list, and the tasks being performed were in 'PROGRESS' column list. I created a new column named 'ISSUES' for tasks that presented difficulty issues.
 
-The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed. 
+The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed.
 
 ## Documentation
 
@@ -56,7 +50,7 @@ Operating System:
 
 - Linux: RHEL 6/7, 64-bit (almost all libraries also work in Ubuntu)
 - x86 64-bit CPU (Intel / AMD architecture). ARM CPUs are not supported.
-- 4 GB RAM 
+- 4 GB RAM
 - 5 GB free disk space
 
 reference: [Enthought Python Minimum Hardware Requirements](https://support.enthought.com/hc/en-us/articles/204273874-Enthought-Python-Minimum-Hardware-Requirements)
@@ -97,32 +91,41 @@ tqdm==4.66.1
 ```py
  python --version
 ```
+
 It should return the python version, example below
-```
+
+```bash
 Python 3.10.12
 ```
+
 if python it is not installed, go back to how to install it [here](https://wiki.python.org/moin/BeginnersGuide/Download)
 
-2. Download text analyzer
+2.Download text analyzer
 
 Download the text analyzer file by navigating to the [Github repository](https://github.com/johnfaber2801/T1A3-Terminal) and select 'Download ZIP'
 
-![zip](Files/Download%20ZIP.png)
+![zip](docs/Download%20ZIP.png)
 
-3. In your terminal, navigate to the directory 'T1A3-Terminal'
+3.In your terminal, navigate to the directory 'T1A3-Terminal'
 
  ```bash
  cd T1A3-Terminal
  ```
+
  then run  'script.sh' to install dependencies, activate a virtual environment, and run Python within T1A3-Terminal directory
+
  ```bash
  ./script.sh
  ```
+
  or alternatively run
+
  ```bash
  bash script.sh
  ```
+
  the app should open after installing. if the app does not run
+
  ```bash
  python3 src/main.py
  ```
@@ -131,9 +134,20 @@ Download the text analyzer file by navigating to the [Github repository](https:/
 
 ### Text Analyzer app instructions
 
-1. you are going to be welcome by the app then ask you to enter your text to be analyzed 
-( simply copy and paste your text or write yours) then press 'enter'
-2. 4 options will pop,  please type 1, 2, 3 or 4 then 'enter' , the analisis will be shown after
-3. a 'Would you like to continue? (yes/no):' will prompt after the analysis result, then you have the option of go back to the menu to use the other analysis for your text or exit the app.
-4. a thanks message will be shown meaning the app is terminated.
+1. you are going to be welcome by the app then ask you to enter your text to be analyzed.
+( simply copy and paste your text or write yours) then press 'enter'.
 
+[inpuu](docs/welcome)
+[text](docs/input%20text.png)
+
+2.Foour options will pop,  please type 1, 2, 3 or 4 then 'enter' , the analisis will be shown after.
+
+[options](docs/menu.png)
+
+3 'Would you like to continue? (yes/no):' will prompt after the analysis result, then you have the option of go back to the menu to use the other analysis for your text or exit the app.
+
+[menu](docs/yes%20no%20prompt.png)
+
+4.Thanks message will be shown meaning the app is terminated.
+
+[exit](docs/exit.png)

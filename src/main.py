@@ -15,8 +15,8 @@ def get_user_input():  # input text from user
     while True:
         try:
             user_text = input('Enter the text you want to analyze:\n\n ')
-            if len(user_text.strip()) == 0:
-                raise ValueError('Input cannot be empty. Please enter text')
+            if len(user_text.strip()) <= 10:
+                raise ValueError('Input cannot be empty. Minimum 10 words')
             return user_text
         except Exception as e:
             print(f"Error: {e}")
@@ -52,7 +52,7 @@ def main():
 
             elif choice == '4':
                 print('--------------------------------')
-                print('Thanks for using Text File Analizer! ')
+                print('Thanks for using Text Analizer! ')
                 print('--------------------------------')
                 break
             else:
@@ -65,7 +65,7 @@ def main():
                     print("\nInvalid choice, Input must be 'yes' or 'no'")
             if option != 'yes':
                 print('--------------------------------')
-                print('Thanks for using Text File Analyzer!')
+                print('Thanks for using Text Analyzer!')
                 print('--------------------------------')
                 break
         except Exception as e:
