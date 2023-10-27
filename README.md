@@ -34,14 +34,6 @@ Allow users to extract the most frequent non-stop words from the text. Additiona
 
 Note: This process is set up to run the natural language process over texts written in English, Spanish, Italian, German, and French.
 
-## Implementation Plan
-
-The Text Analyzer project utilized the GitHub projects tool in order to execute features, tests, checklists, and any tasks related to the project. First, a creation of tasks for features 1, 2, and 3 was performed followed by checklists. example: Featuare #1 = 1.1 Build functions for counting words, Feature #1 = 1.2 Build functions for counting characters... etc. Then tasks such as error handlers, menu options, corrections, scripts, and more were specified. Majority of tasks contains comments, screenshots and sources links.
-
-The implementation plan was reviewed and updated every day as well after tasks completed successfully, tasks completed at the end of the day were moved to the 'DONE' column list, while tasks not started yet were in 'TODO' column list, and the tasks being performed were in 'PROGRESS' column list. I created a new column named 'ISSUES' for tasks that presented difficulty issues.
-
-The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed.
-
 ## Documentation
 
 ### Hardware Requirements
@@ -137,17 +129,25 @@ Download the text analyzer file by navigating to the [Github repository](https:/
 1. you are going to be welcome by the app then ask you to enter your text to be analyzed.
 ( simply copy and paste your text or write yours) then press 'enter'.
 
-[inpuu](docs/welcome)
-[text](docs/input%20text.png)
+![inpuu](docs/welcome)
+![text](docs/input%20text.png)
 
 2.Foour options will pop,  please type 1, 2, 3 or 4 then 'enter' , the analisis will be shown after.
 
-[options](docs/menu.png)
+![options](docs/menu.png)
 
 3 'Would you like to continue? (yes/no):' will prompt after the analysis result, then you have the option of go back to the menu to use the other analysis for your text or exit the app.
 
-[menu](docs/yes%20no%20prompt.png)
+![menu](docs/yes%20no%20prompt.png)
 
 4.Thanks message will be shown meaning the app is terminated.
 
-[exit](docs/exit.png)
+![exit](docs/exit.png)
+
+## Implementation Plan
+
+The Text Analyzer project utilized the GitHub projects tool in order to execute features, tests, checklists, and any tasks related to the project. First, a creation of tasks for features 1, 2, and 3 was performed followed by checklists. example: Featuare #1 = 1.1 Build functions for counting words, Feature #1 = 1.2 Build functions for counting characters... etc. Then tasks such as error handlers, menu options, corrections, scripts, and more were specified. Majority of tasks contains comments, screenshots and sources links.
+
+The implementation plan was reviewed and updated every day as well after tasks completed successfully, tasks completed at the end of the day were moved to the 'DONE' column list, while tasks not started yet were in 'TODO' column list, and the tasks being performed were in 'PROGRESS' column list. I created a new column named 'ISSUES' for tasks that presented difficulty issues.
+
+The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed.

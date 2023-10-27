@@ -8,7 +8,7 @@ from analyzer import Word_Frequency
 
 
 def test_word_frequency():
-    text = "This is a text for testing word frequency.This contains word ."
+    text = "This is a text for testing word frequency. This contains word ."
     frequency = Word_Frequency(text)
     word_counts = frequency.word_frequency()
     assert word_counts['word'] == 2
