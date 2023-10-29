@@ -139,15 +139,15 @@ cd src
 
 ![text](docs/input%20text.png)
 
-2.Foour options will pop,  please type 1, 2, 3 or 4 then 'enter' , the analisis will be shown after.
+2.Four options will pop,  please type 1, 2, 3 or 4 then 'enter' , the analisis will be shown after.
 
 ![options](docs/menu.png)
 
-3 'Would you like to continue? (yes/no):' will prompt after the analysis result, then you have the option of go back to the menu to use the other analysis for your text or exit the app.
+3 'Would you like to continue? (yes/no):' will prompt after the analysis result, and then you will have the option of going back to the menu, and using the others analysis for your text or exit the app.
 
 ![menu](docs/yes%20no%20prompt.png)
 
-4.Thanks message will be shown meaning the app is terminated.
+4. a'Thanks' message will be shown meaning the app is terminated.
 
 ![exit](docs/exit.png)
 
