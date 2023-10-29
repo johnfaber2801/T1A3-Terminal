@@ -159,7 +159,7 @@ The implementation plan was reviewed and updated every day as well after tasks c
 
 The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed. 
 
-![](https://
+![tiemline](docs/timeline.png)
 
 ### Feature #1
 
