@@ -143,11 +143,11 @@ cd src
 
 ![options](docs/menu.png)
 
-3 'Would you like to continue? (yes/no):' will prompt after the analysis result, and then you will have the option of going back to the menu, and using the others analysis for your text or exit the app.
+3.'Would you like to continue? (yes/no):' will prompt after the analysis result, and then you will have the option of going back to the menu, and using the others analysis for your text or exit the app.
 
 ![menu](docs/yes%20no%20prompt.png)
 
-4. a'Thanks' message will be shown meaning the app is terminated.
+4.A 'Thanks' message will be shown meaning the app is terminated.
 
 ![exit](docs/exit.png)
 
@@ -159,7 +159,7 @@ The implementation plan was reviewed and updated every day as well after tasks c
 
 The first screenshot below shows the timeline of the duration of the project with the dates of the tasks completed. 
 
-![tiemline](docs/timeline.png)
+![timeline](docs/timeline.png)
 
 ### Feature #1
 
